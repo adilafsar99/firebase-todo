@@ -1,0 +1,226 @@
+.todo-app {
+  width: 80%;
+  margin: 0 auto;
+  border: 4px solid;
+  border-radius: 4px;
+  padding: 0 8px;
+  background-color: #fff100;
+}
+
+.app-title-div {
+  text-align: center;
+  background-color: #000000;
+  color: #fff100;
+  font-style: italic;
+  border-radius: 4px;
+}
+
+.sub-title-div {
+  text-align: center;
+  background-color: #000000;
+  color: #fff100;
+  font-style: italic;
+  border-radius: 4px;
+}
+
+h1 {
+  padding: 5px 0;
+}
+
+.loader-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.loader {
+  border: 5px solid #fff100;
+  border-top: 5px solid #000000;
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  animation: spin 0.7s linear infinite;
+}
+
+.delete-all-btn-div {
+  width: 95%;
+  margin: 0 auto 10px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  border: 2px double;
+  font-weight: bolder;
+  font-style: italic;
+  color: #fff100;
+  background-color: #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button:focus {
+  outline: none;
+}
+
+.delete-all-btn {
+  height: 40px;
+}
+
+.disabled {
+  color: #4b4b4b;
+  background-color: #767928;
+}
+
+.add-btn-div {
+  width: 95%;
+  margin: 0 auto 15px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.add-btn-div > div {
+  display: flex;
+}
+
+#task-input-box {
+  padding-left: 4px;
+  margin-right: 5px;
+  width: 80%;
+  height: 38px;
+  font-size: 16px;
+  border: 2px solid #797979;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#task-input-box::placeholder {
+  color: #d71247;
+}
+
+#task-input-box:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+#add-task-btn {
+  width: 20%;
+  height: 38px;
+}
+
+.task-list-div {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #fff100;
+  padding: 0 2px;
+  margin-top: 10px;
+  border: 4px solid;
+  border-radius: 4px;
+}
+
+#task-list {
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+  overflow-y: scroll;
+  list-style-type: armenian;
+}
+
+.main-div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.sub-div1 {
+  width: 60%;
+  padding-left: 5px;
+  color: #fff100;
+  background-color: #000000;
+  border-radius: 4px;
+  margin-right: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.sub-div1 > p {
+  width: 100%;
+}
+
+.task-update-box {
+  width: 100%;
+  height: 45px;
+  border-radius: 4px;
+  font-size: 16px;
+  padding-left: 1px;
+  color: #fff100;
+  background-color: #000000;
+  border: none;
+}
+
+.task-update-box:focus {
+  outline: none;
+}
+
+.task-update-box::placeholder {
+  color: #d71247;
+}
+
+.sub-div2 {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-btn {
+  width: 60px;
+}
+
+#delete-btn {
+  width: 55px;
+}
+
+::selection {
+  color: #000000;
+  background-color: #fff100;
+}
+
+/* Media Queries */
+
+@media (min-width: 530px) {
+  .todo-app {
+    width: 70%;
+  }
+  .task-list-div {
+    width: 85%;
+  }
+}
+
+@media (min-width: 700px) {
+  .todo-app {
+    width: 65%;
+  }
+  .task-list-div {
+    width: 75%;
+  }
+}
+
+@media (min-width: 850px) {
+  .todo-app {
+    width: 60%;
+  }
+  .task-list-div {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1120px) {
+  .todo-app {
+    width: 50%;
+  }
+  .task-list-div {
+    width: 55%;
+  }
+}

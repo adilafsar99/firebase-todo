@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Firebase Todo App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="todo-app">
+    <div class="app-title-div">
+      <h1>Todo App</h1>
+    </div>
+    <div class="task-input-div">
+      <div class="delete-all-btn-div">
+        <button class="delete-all-btn" id="delete-all-btn" onclick="delAllTasks()">
+          <div id="del-all-loader-text">
+            Delete All
+          </div>
+          <div class="loader" style="display:none" id="del-all-loader"></div>
+        </button>
+      </div>
+      <div class="add-btn-div">
+        <div>
+          <input id="task-input-box" type="text" maxlength="40" />
+          <button id="add-task-btn" onclick="addTask()">
+            <div id="add-loader-text">
+              Add Task
+            </div>
+            <div class="loader" style="display:none" id="add-loader"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="task-list-div">
+    <div class="sub-title-div">
+      <h2>Tasks</h2>
+    </div>
+    <ul id="task-list">
+      <div class="loader-div">
+        <div class="loader" id="main-loader"></div>
+      </div>
+    </ul>
+  </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+                   https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyALNzODNTsgPjYEIr9m6661RPqRLWa5Ekk",
+      authDomain: "practice-project-2-d8b7e.firebaseapp.com",
+      projectId: "practice-project-2-d8b7e",
+      storageBucket: "practice-project-2-d8b7e.appspot.com",
+      messagingSenderId: "968935591437",
+      appId: "1:968935591437:web:14884138c28a173d648f44"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
